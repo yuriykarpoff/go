@@ -80,20 +80,25 @@
 
     <section>
         <h2>Забронировать</h2>
-        <form action="https://jsonplaceholder.typicode.com/posts" method="POST">
+        <form action="https://jsonplaceholder.typicode.com/posts" method="POST" name="bookRoom">
             <fieldset>
-                <label><input type="radio" name="room" value="vibes">80's vibes</label>
-                <label><input type="radio" name="room" value="star_wars">Star wars</label>
-                <label><input type="radio" name="room" value="wild_west">Wild west</label>
-                <label><input type="radio" name="room" value="neon_style">Neon style</label>
+                <label for="vibes">80's vibes</label>
+                <input type="radio" name="room" id="vibes" value="vibes">
+                <label for="starWars">Star wars</label>
+                <input type="radio" name="room" id="starWars" value="starWars">
+                <label for="wildWest">Wild west</label>
+                <input type="radio" name="room" id="wildWest" value="wildWest">
+                <label for="neonStyle">Neon style</label>
+                <input type="radio" name="room" id="neonStyle" value="neonStyle">
             </fieldset>
+
             <fieldset>
                 <legend>Собери набор развлечений</legend>
                 <fieldset>
                     <legend>Приставка:</legend>
-                        <label><input type="radio" name="console" value="playstation">PlayStation</label>
-                        <label><input type="radio" name="console" value="sega_mega_drive">Sega Mega Drive</label>
-                        <label><input type="radio" name="console" value="x_box_one_s">X-box One S</label>
+                        <label><input type="radio" name="console" value="playStation">PlayStation</label>
+                        <label><input type="radio" name="console" value="segaMegaDrive">Sega Mega Drive</label>
+                        <label><input type="radio" name="console" value="xBoxOneS">X-box One S</label>
                         <label><input type="radio" name="console" value="dendy">Dendy</label>
                 </fieldset>
                 <fieldset>
@@ -110,17 +115,19 @@
                 </fieldset>
                 <fieldset>
                     <legend>Выберите дату и время</legend>
-                        <label>Дата * <input type="date" name="date" required></label>
-                        <label>Время * <input type="time" name="time" required></label>
-                        <br>
-                        <label>Количество человек * <input type="number" name="person" required></label>
-                        <br>
-                        <label>Имя * <input type="text" name="name" required></label>
-                        <br>
-                        <label>Фамилия * <input type="text" name="surname" required></label>
-                        <br>
-                        <label>Номер телефона * <input type="tel" name="phone" title="Введите номер в числовом формате (без плюсов, тире и скобок)" required pattern="^[ 0-9]+$"></label>
-                        <br>
+                        <label for="date">Дата * </label>
+                        <input type="date" name="date" id="date" required>
+                        <label for="time">Время * </label>
+                        <input type="time" name="time" id="time" required>
+                        <label for="person">Количество человек * </label>
+                        <input type="number" name="person" id="person" required>
+                        <label for="name">Имя * </label>
+                        <input type="text" name="name" id="name" required>
+                        <label for="surname">Фамилия * </label>
+                        <input type="text" name="surname" id="surname" required>
+                        <label for="phone">Номер телефона * </label>
+                        <input type="tel" name="phone" id="phone" title="Введите номер в числовом формате (без плюсов, тире и скобок)" required pattern="^[ 0-9]+$">
+
                         <label><input type="checkbox" name="age" required>Я старше 18 лет</label>
                 </fieldset>
             </fieldset>
