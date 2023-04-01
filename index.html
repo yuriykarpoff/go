@@ -113,29 +113,21 @@
                 </fieldset>
                 <fieldset>
                     <legend>Выберите дату и время</legend>
-                        <label for="date">Дата * </label>
-                        <input type="date" name="date" id="date" required>
-                        <label for="time">Время * </label>
+                        <input type="date" name="date" id="date" placeholder="Дата" required>
                         <input type="time" name="time" id="time" required>
-                        <label for="person">Количество человек * </label>
-                        <select name="person" id="person" require>
-                            <option value="person1-3">1-3</option>
-                            <option value="person4-6">4-6</option>
-                            <option value="person9-12">9-12</option>
-                            <option value="person13-15">13-15</option>
-                        </select>
+                        <input type="number" name="person" id="person" placeholder="Количество персон" required>
                         <label for="name">Имя * </label>
                         <input type="text" name="name" id="name" required>
                         <label for="surname">Фамилия * </label>
                         <input type="text" name="surname" id="surname" required>
                         <label for="phone">Номер телефона * </label>
                         <input type="tel" name="phone" id="phone" title="Введите номер в числовом формате (без плюсов, тире и скобок)" required pattern="^[ 0-9]+$">
-
-                        <label><input type="checkbox" name="age" required>Я старше 18 лет</label>
+                        <label for="email">E-mail * </label>
+                        <input type="email" name="email" id="email" title="Введите e-mail в формате example@example.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                 </fieldset>
             </fieldset>
                 <button type="submit">Забронировать</button>
-                <label><input type="checkbox" name="data" required>Согласен на обработку данных</label>
+                
         </form>
     </section>
 
