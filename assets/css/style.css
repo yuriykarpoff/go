@@ -56,6 +56,8 @@ ul {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+  margin: 100px 0 50px;
+  padding: 0;
 }
 
 /* Стилизуем блок с комнатами */
@@ -110,12 +112,22 @@ ul {
   font-size: 20px;
   line-height: 28px;
   font-weight: 400;
+  margin: 0 0 28px;
+  padding: 0;
 }
 
 .text-quote {
   font-size: 44px;
   line-height: 50px;
   text-transform: uppercase;
+  max-width: 1125px;
+  margin: 0;
+  padding: 50px 0 42px;
+  white-space: pre-line;
+}
+
+.quote-author {
+  margin-left: 750px;
 }
 
 .quote-author-img {
@@ -164,4 +176,34 @@ ul {
 
 .faq_item:last-child {
     margin-bottom: 0;
+}
+
+/* Стилизуем блок контактов */
+
+.block-contact-img {
+  float: left;
+  margin-right: 26px;
+}
+
+.block-contact-img-city {
+  float: left;
+  margin-right: 26px;
+  padding: 15px 0 0;
+}
+
+.block-contact-info {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  font-style: normal;
+  white-space: pre-line;
+}
+
+.city {
+  margin-top: -40px;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: #fff;
 }
