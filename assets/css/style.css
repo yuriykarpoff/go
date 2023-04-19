@@ -1,6 +1,6 @@
-/* * {
+* {
     box-sizing: border-box;
-  } */
+  }
 
 body {
     background-color: #1B1A1B;
@@ -14,6 +14,154 @@ body {
     background-color: #1B1A1B;
 }
 
-.quote {
-    text-transform: uppercase;
-  }
+/* Стилизуем шапку */
+
+
+
+.title {
+  font-size: 150px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 28px;
+  line-height: 50px;
+}
+
+.room {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-image: url("../images/background_man.png");
+  background-repeat: no-repeat;
+  background-size: 675px 762px;
+  background-position: right 0 top 70px;
+  min-height: 823px;
+}
+
+/* Общий класс для всех заголовков h2 */
+.headline {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Стилизуем блок с комнатами */
+
+.room-list {
+  list-style: none;
+}
+
+.room-item {
+  background-color: aqua;
+  min-height: 710px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.room-item:last-child {
+  margin-bottom: 0;
+}
+
+.room-link {
+  display: inline-block;
+  vertical-align: baseline;
+  padding: 275px 0;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 80px;
+  max-width: 250px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.vibes {
+  background-image: url(../images/room_vibes.jpg); 
+}
+
+.wars { 
+  background-image: url(../images/room_starwars.jpg);
+}
+
+.west {
+  background-image: url(../images/room_west.jpg);
+}
+
+.neon {
+  background-image: url(../images/room_neon.jpg);
+}
+
+/* Блок автора */
+
+.text {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+.text-quote {
+  font-size: 44px;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+.quote-author-img {
+  border-radius: 40px;
+  float: left;
+  margin-right: 30px;
+}
+
+.quote-author-info {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  max-width: 380px;
+}
+
+
+/* Блок ответов на вопросы */
+
+  .faq_list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.faq_item {
+    font-weight: 700;
+    font-size: 24px;
+    padding: 30px 70px;
+    margin-bottom: 20px;
+    background-size: 45px 45px;
+    background-position: top 50% right 70px;
+    background-repeat: no-repeat; 
+}
+
+.faq_item:nth-child(odd) {
+    background-color: #fff;
+    color: #1C1A1A;
+    background-image: url(../images/open-purple.svg);
+}
+
+.faq_item:nth-child(even) {
+    background-color: #440F51;
+    color: #fff;
+    background-image: url(../images/open.svg);
+}
+
+.faq_item:last-child {
+    margin-bottom: 0;
+}
