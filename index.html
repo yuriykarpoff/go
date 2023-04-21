@@ -14,6 +14,7 @@
 </head>
 <body>
     <div class="wrapper">
+    
     <header class="header">
         <h1 class="title">Game Over</h1>
         <p class="subtitle">Новый формат игр и отдыха</p>       
@@ -32,56 +33,56 @@
 
     <section id="booking-id" class="booking">
         <h2 class="headline">Забронировать</h2>
-        <form action="https://jsonplaceholder.typicode.com/posts" method="POST" name="bookRoom">
-            <fieldset>
-                <legend>Выбери зал</legend>
-                    <label for="vibes">80's vibes</label>
-                    <input type="radio" name="room" id="vibes" value="vibes">
-                    <label for="starWars">Star wars</label>
-                    <input type="radio" name="room" id="starWars" value="starWars">
-                    <label for="wildWest">Wild west</label>
-                    <input type="radio" name="room" id="wildWest" value="wildWest">
-                    <label for="neonStyle">Neon style</label>
-                    <input type="radio" name="room" id="neonStyle" value="neonStyle">
-            </fieldset>
+            <form action="https://jsonplaceholder.typicode.com/posts" method="POST" name="bookRoom">
+                <fieldset>
+                    <legend>Выбери зал</legend>
+                        <label for="vibes">80's vibes</label>
+                        <input type="radio" name="room" id="vibes" value="vibes">
+                        <label for="starWars">Star wars</label>
+                        <input type="radio" name="room" id="starWars" value="starWars">
+                        <label for="wildWest">Wild west</label>
+                        <input type="radio" name="room" id="wildWest" value="wildWest">
+                        <label for="neonStyle">Neon style</label>
+                        <input type="radio" name="room" id="neonStyle" value="neonStyle">
+                </fieldset>
 
-            <fieldset>
-                <legend>Собери набор развлечений</legend>
                 <fieldset>
-                    <legend>Приставка:</legend>
-                        <label><input type="radio" name="console" value="playStation">PlayStation</label>
-                        <label><input type="radio" name="console" value="segaMegaDrive">Sega Mega Drive</label>
-                        <label><input type="radio" name="console" value="xBoxOneS">X-box One S</label>
-                        <label><input type="radio" name="console" value="dendy">Dendy</label>
+                    <legend>Собери набор развлечений</legend>
+                    <fieldset>
+                        <legend>Приставка:</legend>
+                            <label><input type="radio" name="console" value="playStation">PlayStation</label>
+                            <label><input type="radio" name="console" value="segaMegaDrive">Sega Mega Drive</label>
+                            <label><input type="radio" name="console" value="xBoxOneS">X-box One S</label>
+                            <label><input type="radio" name="console" value="dendy">Dendy</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Настольные игры:</legend>
+                            <label><input type="checkbox" name="table_games" value="jenga">Jenga</label>
+                            <label><input type="checkbox" name="table_games" value="monopoly">Monopoly</label>
+                            <label><input type="checkbox" name="table_games" value="munchkin">Манчкин</label>
+                            <label><input type="checkbox" name="table_games" value="alias">Alias</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Дополнительно:</legend>
+                            <label><input type="checkbox" name="extra" value="karaoke">Караоке</label>
+                            <label><input type="checkbox" name="extra" value="vr">VR</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Выберите дату и время</legend>
+                            <input type="date" name="date" id="date" placeholder="Дата" required>
+                            <input type="time" name="time" id="time" required>
+                            <input type="number" name="person" id="person" placeholder="Количество персон" required>
+                            <label for="name">Имя * </label>
+                            <input type="text" name="name" id="name" required>
+                            <label for="surname">Фамилия * </label>
+                            <input type="text" name="surname" id="surname" required>
+                            <label for="phone">Номер телефона * </label>
+                            <input type="tel" name="phone" id="phone" title="Введите номер в числовом формате (без плюсов, тире и скобок)" required pattern="^[ 0-9]+$">
+                            <label for="email">E-mail * </label>
+                            <input type="email" name="email" id="email" title="Введите e-mail в формате example@example.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                        <   label><input type="checkbox" name="age" required>Я старше 18 лет</label>
+                    </fieldset>
                 </fieldset>
-                <fieldset>
-                    <legend>Настольные игры:</legend>
-                        <label><input type="checkbox" name="table_games" value="jenga">Jenga</label>
-                        <label><input type="checkbox" name="table_games" value="monopoly">Monopoly</label>
-                        <label><input type="checkbox" name="table_games" value="munchkin">Манчкин</label>
-                        <label><input type="checkbox" name="table_games" value="alias">Alias</label>
-                </fieldset>
-                <fieldset>
-                    <legend>Дополнительно:</legend>
-                        <label><input type="checkbox" name="extra" value="karaoke">Караоке</label>
-                        <label><input type="checkbox" name="extra" value="vr">VR</label>
-                </fieldset>
-                <fieldset>
-                    <legend>Выберите дату и время</legend>
-                        <input type="date" name="date" id="date" placeholder="Дата" required>
-                        <input type="time" name="time" id="time" required>
-                        <input type="number" name="person" id="person" placeholder="Количество персон" required>
-                        <label for="name">Имя * </label>
-                        <input type="text" name="name" id="name" required>
-                        <label for="surname">Фамилия * </label>
-                        <input type="text" name="surname" id="surname" required>
-                        <label for="phone">Номер телефона * </label>
-                        <input type="tel" name="phone" id="phone" title="Введите номер в числовом формате (без плюсов, тире и скобок)" required pattern="^[ 0-9]+$">
-                        <label for="email">E-mail * </label>
-                        <input type="email" name="email" id="email" title="Введите e-mail в формате example@example.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
-                        <label><input type="checkbox" name="age" required>Я старше 18 лет</label>
-                </fieldset>
-            </fieldset>
                 <button type="submit">Забронировать</button>
                 <label><input type="checkbox" name="data" required>Согласен на обработку данных</label>
         </form>
@@ -89,8 +90,8 @@
 
     <section id="about-id" class="about">
         <h2 class="headline">О нас</h2>
-        <p class="text">Для наших гостей мы создали концептуально новое игровое пространство виртуальной реальности в центральной части города.</p>
-        <p class="text">Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира.</p>
+            <p class="text">Для наших гостей мы создали концептуально новое игровое пространство виртуальной реальности в центральной части города.</p>
+            <p class="text">Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира.</p>
 
         <blockquote class="quote">
             <p class="quote-name">GAME OVER — </p>
@@ -103,40 +104,39 @@
         </blockquote>
     </section>
 
-    <section id="faq-id">
+    <section id="faq-id" class="faq">
         <h2 class="headline">Частые вопросы</h2>
-        <ul class="faq_list">
-            <li class="faq_item">Можно ли забронировать комнату онлайн?</li>
-            <li class="faq_item">Могут ли мне вернуть деньги за бронь?</li>
-            <li class="faq_item">Какая комната самая популярная?</li>
-            <li class="faq_item">Как получить VIP карту?</li>
-            <li class="faq_item">Какая комната самая популярная?</li>
-        </ul>
+            <ul class="faq-list">
+                <li class="faq-item">Можно ли забронировать комнату онлайн?</li>
+                <li class="faq-item">Могут ли мне вернуть деньги за бронь?</li>
+                <li class="faq-item">Какая комната самая популярная?</li>
+                <li class="faq-item">Как получить VIP карту?</li>
+                <li class="faq-item">Какая комната самая популярная?</li>
+            </ul>
     </section>
     </main>
 
-    <footer>
-        <h2 id="contact-id" class="headline">Контакты</h2>
+    <footer id="contact-id">
+        <h2 class="headline">Контакты</h2>
         
         <address class="contact">
-            <div class="contact-block">
-                <img src="assets/images/icon_location.svg" class="contact-img img-city" alt="Наш адрес">
-                <p class="contact-info">г. Москва 
-                                          ул. Аквамарина, 16</p>
-                </div>
-      
-            <div class="contact-block">
-                <img src="assets/images/icon_call.svg" class="contact-img" alt="Наш телефон">
-                <p class="contact-info"><a class="contact-link" href="tel:89509302893">8(950)930-28-93</a></p>
-            </div>
-            
-            <div class="contact-block">
-                <img src="assets/images/icon_mail.svg" class="contact-img" alt="Наша электронная почта">
-                <p class="contact-info"><a class="contact-link" href="mailto:gameover@gmail.com">GameOver@gmail.com</a></p>
-            </div>   
+            <ul class="contact-list">
+                <li class="contact-item">
+                    <img src="assets/images/icon_location.svg" class="contact-img img-city" alt="Наш адрес">
+                    <p class="contact-info">г. Москва <br>ул. Аквамарина, 16</p>
+                </li>
+                <li class="contact-item">
+                    <img src="assets/images/icon_call.svg" class="contact-img" alt="Наш телефон">
+                    <p class="contact-info"><a class="contact-link" href="tel:89509302893">8(950)930-28-93</a></p>
+                </li>
+                <li class="contact-item">
+                    <img src="assets/images/icon_mail.svg" class="contact-img" alt="Наша электронная почта">
+                    <p class="contact-info"><a class="contact-link" href="mailto:gameover@gmail.com">GameOver@gmail.com</a>
+                </li>
+            </ul>
         </address>
 
-        <nav>    
+        <nav class="footer-nav">    
         <ul class="social">
             <li class="social-item">
                 <a class="social-link" href="http://vk.com" target="_blank">
