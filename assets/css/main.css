@@ -18,14 +18,11 @@
     font-weight: 900;
     letter-spacing: -0.1em;
     text-transform: uppercase;
-    margin: 0;
-    padding: 0;
   }
   
   .banner-subtitle {
     font-size: 28px;
     line-height: 50px;
-    margin: 0;
     padding: 0 0 0 100px;
   }
 
@@ -34,14 +31,7 @@
 .room {
     height: 100%;
     margin: 0 0 100px;
-    padding: 0;
   }
-  
-.room-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
   
 .room-item {
     min-height: 710px;
@@ -94,14 +84,12 @@
 }
   
 .quote {
-    margin: 0;
     padding: 78px 0 0;
     display: flow-root;
 }
   
 .about-text-p {
     margin: 0 0 28px;
-    padding: 0;
 }
 
 .about-text-p:last-child {
@@ -163,12 +151,6 @@
 
 .faq {
     margin: 0 0 100px;
-}
-  
-.faq-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
 }
   
 .faq-item {
