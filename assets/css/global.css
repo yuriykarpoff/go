@@ -69,13 +69,17 @@ iframe {
   margin: 0 auto;
 }
 
+/* Задаем нижний отступ для каждой секции */
+section {
+  padding-bottom: 100px;
+}
+
 /* Общий класс для всех заголовков h2 */
 .headline {
-    font-size: 40px;
-    line-height: 50px;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-    margin: 0 0 50px;
-    padding: 0;
-  }
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 0 50px;
+}
