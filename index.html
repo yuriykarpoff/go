@@ -14,13 +14,13 @@
 </head>
 <body>
     <div class="wrapper">
-    
-    <header class="header">
-        <h1 class="title">Game Over</h1>
-        <p class="subtitle">Новый формат игр и отдыха</p>       
-    </header>
+    <main class="main">
 
-    <main>
+    <section id="banner-id" class="banner">
+            <h1 class="banner-title">Game Over</h1>
+            <p class="banner-subtitle">Новый формат игр и отдыха</p>       
+    </section>
+
     <section id="room-id" class="room">
         <h2 class="headline">Наши залы</h2>
             <ul class="room-list">
@@ -90,17 +90,18 @@
 
     <section id="about-id" class="about">
         <h2 class="headline">О нас</h2>
-            <p class="text">Для наших гостей мы создали концептуально новое игровое пространство виртуальной реальности в центральной части города.</p>
-            <p class="text">Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира.</p>
-
-        <blockquote class="quote">
-            <p class="quote-name">GAME OVER — </p>
-            <p class="quote-desc">это место незабываемых впечатлений</p>
-            
-            <div class="quote-author">
-                <img src="assets/images/author_abakshin.jpg" class="quote-author-img" alt="Аркадий Абакшин - создатель GAME OVER">
-                <cite class="quote-author-info">Аркадий Абакшин, создатель игровой территории GAME OVER</cite>
+            <div class="about-text">
+                <p class="about-text-p">Для наших гостей мы создали концептуально новое игровое пространство виртуальной реальности в центральной части города.</p>
+                <p class="about-text-p">Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира.</p>
             </div>
+        <blockquote class="quote">
+            <p class="quote-text">GAME OVER — 
+                это место незабываемых впечатлений</p>
+        
+            <figure class="quote-author">
+                <img src="assets/images/author_abakshin.jpg" class="quote-author-img" alt="Аркадий Абакшин - создатель GAME OVER">
+                <figcaption class="quote-author-info">Аркадий Абакшин, создатель игровой территории GAME OVER</figcaption>
+            </figure>
         </blockquote>
     </section>
 
@@ -116,21 +117,18 @@
     </section>
     </main>
 
-    <footer id="contact-id">
+    <footer id="contact-id" class="footer">
         <h2 class="headline">Контакты</h2>
         
         <address class="contact">
             <ul class="contact-list">
-                <li class="contact-item">
-                    <img src="assets/images/icon_location.svg" class="contact-img img-city" alt="Наш адрес">
+                <li class="contact-item location">
                     <p class="contact-info">г. Москва <br>ул. Аквамарина, 16</p>
                 </li>
-                <li class="contact-item">
-                    <img src="assets/images/icon_call.svg" class="contact-img" alt="Наш телефон">
+                <li class="contact-item call">
                     <p class="contact-info"><a class="contact-link" href="tel:89509302893">8(950)930-28-93</a></p>
                 </li>
-                <li class="contact-item">
-                    <img src="assets/images/icon_mail.svg" class="contact-img" alt="Наша электронная почта">
+                <li class="contact-item mail">
                     <p class="contact-info"><a class="contact-link" href="mailto:gameover@gmail.com">GameOver@gmail.com</a>
                 </li>
             </ul>

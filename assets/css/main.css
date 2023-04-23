@@ -1,3 +1,35 @@
+/* Блок с баннером */
+.main {
+    margin: 146px 0 0;
+}
+
+.banner {
+    margin: 0 0 100px;
+    background-image: url("../images/background_man.png");
+    background-color: aqua;
+    background-repeat: no-repeat;
+    background-size: 675px 762px;
+    background-position: right bottom;
+    min-height: 823px;
+  }
+  
+  .banner-title {
+    font-size: 150px;
+    line-height: 150px;
+    font-weight: 900;
+    letter-spacing: -0.1em;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .banner-subtitle {
+    font-size: 28px;
+    line-height: 50px;
+    margin: 0;
+    padding: 0 0 0 100px;
+  }
+
 /* Стилизуем блок с комнатами */
 
 .room {
@@ -13,10 +45,10 @@
 }
   
 .room-item {
-    background-color: aqua;
     min-height: 710px;
     margin-bottom: 60px;
     text-align: center;
+    padding: 275px 0;
 }
   
 .room-item:last-child {
@@ -26,7 +58,6 @@
 .room-link {
     display: inline-block;
     vertical-align: baseline;
-    padding: 275px 0;
     font-size: 70px;
     font-weight: 700;
     line-height: 80px;
@@ -65,52 +96,54 @@
   
 .quote {
     margin: 0;
-    padding: 50px 0 0;
+    padding: 78px 0 0;
+    display: flow-root;
 }
   
-.text {
+.about-text-p {
     margin: 0 0 28px;
     padding: 0;
 }
-  
-.quote-name {
-    font-size: 44px;
-    line-height: 50px;
-    text-transform: uppercase;
-    max-width: 1125px;
+
+.about-text-p:last-child {
     margin: 0;
-    padding: 0
 }
+
   
-.quote-desc {
+.quote-text {
+    position: relative;
     font-size: 44px;
     line-height: 50px;
     text-transform: uppercase;
     max-width: 1125px;
     margin: 0 0 40px;
-    padding: 0 0 0 52px;
+    padding: 0 0 0 55px;
+    white-space: pre-line;
 }
   
-.quote-name:before {
+  
+.quote-text:before {
+    position: absolute;
+    top: -8px;
+    left: 0;
     content: '\201C';
     color: #6C0287;
     font-size: 44px;
     line-height: 50px;
     font-weight: 900;
-    margin: 0 15px 0;
 }
   
-.quote-desc:after {
-    content: '\201D';
+.quote-text:after {
+    content: ' \201D';
     color: #6C0287;
     font-size: 44px;
     line-height: 50px;
     font-weight: 900;
-    margin: 0 0 0 15px;
 }
   
 .quote-author {
-    margin: 0 0 0 800px;
+    float: right;
+    max-width: 380px;
 }
   
 .quote-author-img {
