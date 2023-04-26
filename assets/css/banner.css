@@ -1,8 +1,4 @@
 /* Блок с баннером */
-.banner {
-  padding: 0 0 50px;
-}
-
 .banner-wrapper {
   background-image: url("../images/background_man.png");
   background-repeat: no-repeat;
