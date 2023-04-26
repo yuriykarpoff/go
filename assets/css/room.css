@@ -1,9 +1,4 @@
-/* Блок с комнатами */
-
-.room {
-    height: 100%;
-}
-  
+/* Блок с комнатами */  
 .room-item {
     min-height: 710px;
     margin-bottom: 60px;

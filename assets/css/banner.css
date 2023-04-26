@@ -1,19 +1,16 @@
 /* Блок с баннером */
-
-/* Пока нет header поместим main временно сюда */
-.main {
-    margin: 146px 0 0;
+.banner {
+  padding: 0 0 50px;
 }
 
-.banner {
-  margin: 0 0 100px; /* для первой секции применяем margin из-за большого неконтентного изображения */
+.banner-wrapper {
   background-image: url("../images/background_man.png");
   background-repeat: no-repeat;
   background-size: 675px 762px;
   background-position: right bottom;
   min-height: 823px;
 }
-  
+
 .banner-title {
   font-size: 150px;
   line-height: 150px;
