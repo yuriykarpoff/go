@@ -3,36 +3,36 @@
     margin: 0 0 40px;
 }
   
-.contact-item {
+.contact__item {
     list-style: none;
     margin: 0 0 11px;
 }
   
-.contact-item:first-child {
+.contact__item:first-child {
     margin: 0 0 38px;
 }
   
-.contact-item:last-child {
+.contact__item:last-child {
     margin: 0;
 }
   
-.location { 
-    background-image: url(../images/icon_location.svg);
+.contact__item_location { 
+    background-image: url(images/icon_location.svg);
     background-repeat: no-repeat;
     background-position: top 50% left;
 }
   
-.call {
-    background-image: url(../images/icon_call.svg);
+.contact__item_call {
+    background-image: url(images/icon_call.svg);
     background-repeat: no-repeat;
 }
   
-.mail {
-    background-image: url(../images/icon_mail.svg);
+.contact__item_mail {
+    background-image: url(images/icon_mail.svg);
     background-repeat: no-repeat;
 }
   
-.contact-info {
+.contact__info {
     font-size: 24px;
     line-height: 28px;
     font-weight: 700;
@@ -41,29 +41,29 @@
 }
 
   
-.contact-link {
+.contact__link {
     text-decoration: none;
     color: #fff;
 }
   
 /* Блок соц сетей */
   
-.social {
+.social__list {
     font-size: 0;
 }
   
-.social-item {
+.social__item {
     display: inline-block;
     vertical-align: middle;
     list-style: none;
     margin: 0 27px 0 0;
 }
   
-.social-item:last-child {
+.social__item:last-child {
     margin-right: 0;
 }
   
-.social-link {
+.social__link {
     display: block;
     text-decoration: none;
     color: #fff;
@@ -77,15 +77,15 @@
     transition-timing-function: ease-in-out;
 }
   
-.social-link:hover {
+.social__link:hover {
     color: #CD06FF;
 }
   
-.social-link:focus {
+.social__link:focus {
     outline-color: #CD06FF;
 }
   
-.social-link:active {
+.social__link:active {
     color: #840AA3
 }
   

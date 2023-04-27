@@ -1,20 +1,18 @@
 /* Блок о нас и цитата */
+.about__text-p {
+    margin: 0 0 28px;
+}
+
+.about__text-p:last-child {
+    margin: 0;
+}
 
 .quote {
     padding: 78px 0 0;
     display: flow-root;
 }
   
-.about-text-p {
-    margin: 0 0 28px;
-}
-
-.about-text-p:last-child {
-    margin: 0;
-}
-
-  
-.quote-text {
+.quote__text {
     position: relative;
     font-size: 44px;
     line-height: 50px;
@@ -26,7 +24,7 @@
 }
   
   
-.quote-text:before {
+.quote__text:before {
     position: absolute;
     top: -8px;
     left: 0;
@@ -37,7 +35,7 @@
     font-weight: 900;
 }
   
-.quote-text:after {
+.quote__text:after {
     content: ' \201D';
     color: #6C0287;
     font-size: 44px;
@@ -45,18 +43,18 @@
     font-weight: 900;
 }
   
-.quote-author {
+.quote__author {
     float: right;
     max-width: 380px;
 }
   
-.quote-author-img {
+.quote__author-img {
     border-radius: 40px;
     float: left;
     margin-right: 30px;
 }
   
-.quote-author-info {
+.quote__author-info {
     font-size: 20px;
     line-height: 28px;
     font-weight: 400;
