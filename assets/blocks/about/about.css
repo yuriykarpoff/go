@@ -1,9 +1,9 @@
 /* Блок о нас и цитата */
-.about__text-p {
+.about__text {
     margin: 0 0 28px;
 }
 
-.about__text-p:last-child {
+.about__text:last-child {
     margin: 0;
 }
 

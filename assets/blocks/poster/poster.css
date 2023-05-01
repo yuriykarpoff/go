@@ -1,5 +1,5 @@
 /* Блок с баннером */
-.banner__wrapper {
+.poster {
   background-image: url("images/background_man.png");
   background-repeat: no-repeat;
   background-size: 675px 762px;
@@ -7,7 +7,7 @@
   min-height: 823px;
 }
 
-.banner__title {
+.poster__title {
   font-size: 150px;
   line-height: 150px;
   font-weight: 900;
@@ -15,7 +15,7 @@
   text-transform: uppercase;
 }
   
-.banner__subtitle {
+.poster__subtitle {
   font-size: 28px;
   line-height: 50px;
   padding: 0 0 0 100px;

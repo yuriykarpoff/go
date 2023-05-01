@@ -16,18 +16,18 @@
     margin: 0;
 }
   
-.contact__item_location { 
+.contact__item_icon-location { 
     background-image: url(images/icon_location.svg);
     background-repeat: no-repeat;
     background-position: top 50% left;
 }
   
-.contact__item_call {
+.contact__item_icon-call {
     background-image: url(images/icon_call.svg);
     background-repeat: no-repeat;
 }
   
-.contact__item_mail {
+.contact__item_icon-mail {
     background-image: url(images/icon_mail.svg);
     background-repeat: no-repeat;
 }

@@ -22,18 +22,18 @@
     text-decoration: none;
 }
   
-.room__item_vibes {
+.room__item_decor-vibes {
     background-image: url(images/room_vibes.jpg); 
 }
   
-.room__item_wars { 
+.room__item_decor-wars { 
     background-image: url(images/room_starwars.jpg);
 }
   
-.room__item_west {
+.room__item_decor-west {
     background-image: url(images/room_west.jpg);
 }
   
-.room__item_neon {
+.room__item_decor-neon {
     background-image: url(images/room_neon.jpg);
 }
