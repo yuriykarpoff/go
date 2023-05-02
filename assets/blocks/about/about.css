@@ -1,4 +1,9 @@
 /* Блок о нас и цитата */
+.about__img {
+    float: left;
+    margin: 0 80px 0 0;
+}
+
 .about__text {
     margin: 0 0 28px;
 }
@@ -8,7 +13,7 @@
 }
 
 .quote {
-    padding: 78px 0 0;
+    padding: 59px 0 0;
     display: flow-root;
 }
   
@@ -19,14 +24,14 @@
     text-transform: uppercase;
     max-width: 1125px;
     margin: 0 0 40px;
-    padding: 0 0 0 55px;
+    padding: 0 0 0 31px;
     white-space: pre-line;
 }
   
   
 .quote__text:before {
     position: absolute;
-    top: -8px;
+    top: 0;
     left: 0;
     content: '\201C';
     color: #6C0287;
