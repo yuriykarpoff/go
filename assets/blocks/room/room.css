@@ -1,9 +1,8 @@
 /* Блок с комнатами */  
 .room__item {
-    min-height: 710px;
     margin-bottom: 60px;
     text-align: center;
-    padding: 275px 0;
+    padding: 315px 0;
 }
   
 .room__item:last-child {

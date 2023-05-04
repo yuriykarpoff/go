@@ -5,15 +5,21 @@
 }
 
 .about__text {
-    margin: 0 0 28px;
+    margin: 0 0 30px;
+    line-height: 30px;
 }
 
 .about__text:last-child {
     margin: 0;
 }
 
+.content__container {
+    display: flow-root;
+}
+
 .quote {
     padding: 59px 0 0;
+    margin: 0;
     display: flow-root;
 }
   
@@ -22,7 +28,6 @@
     font-size: 44px;
     line-height: 50px;
     text-transform: uppercase;
-    max-width: 1125px;
     margin: 0 0 40px;
     padding: 0 0 0 31px;
     white-space: pre-line;
