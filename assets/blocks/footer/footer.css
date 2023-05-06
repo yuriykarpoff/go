@@ -1,0 +1,93 @@
+/* Стилизуем блок контактов */
+.contact {
+    margin: 0 0 40px;
+}
+  
+.contact__item {
+    list-style: none;
+    margin: 0 0 11px;
+}
+  
+.contact__item:first-child {
+    margin: 0 0 38px;
+}
+  
+.contact__item:last-child {
+    margin: 0;
+}
+  
+.contact__item_icon-location { 
+    background-image: url(images/icon_location.svg);
+    background-repeat: no-repeat;
+    background-position: top 50% left;
+}
+  
+.contact__item_icon-call {
+    background-image: url(images/icon_call.svg);
+    background-repeat: no-repeat;
+}
+  
+.contact__item_icon-mail {
+    background-image: url(images/icon_mail.svg);
+    background-repeat: no-repeat;
+}
+  
+.contact__info {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    font-style: normal;
+    padding: 0 0 0 66px;
+}
+
+  
+.contact__link {
+    text-decoration: none;
+    color: #fff;
+}
+  
+/* Блок соц сетей */
+  
+.social__list {
+    font-size: 0;
+}
+  
+.social__item {
+    display: inline-block;
+    vertical-align: middle;
+    list-style: none;
+    margin: 0 27px 0 0;
+}
+  
+.social__item:last-child {
+    margin-right: 0;
+}
+  
+.social__link {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    outline: 1px solid transparent;
+    outline-offset: 3px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    transition-property: color, outline-color;
+    transition-duration: 0.3s, 0.2s;
+    transition-timing-function: ease-in-out;
+}
+  
+.social__link:hover {
+    color: #CD06FF;
+}
+  
+.social__link:focus {
+    outline-color: #CD06FF;
+}
+  
+.social__link:active {
+    color: #840AA3
+}
+  
+  
+  

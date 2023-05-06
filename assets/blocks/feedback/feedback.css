@@ -1,0 +1,28 @@
+.feedback {
+    padding: 0 100px;
+}
+
+.feedback__block {
+    display: flow-root;
+    margin: 0 0 50px;
+}
+
+.feedback__block:last-child {
+    margin: 0;
+}
+
+.feedback__figure {
+    float: left;
+    margin: 0 20px 0 0;
+    max-width: 280px;
+    text-align: center;
+}
+
+.feedback__image {
+    border-radius: 50%;
+    margin: 0 0 11px;
+}
+
+.feedback__text {
+    padding-top: 52px;
+}

@@ -1,0 +1,50 @@
+/* Блок с комнатами */  
+.room__list {
+    display: flow-root;
+}
+
+.room__item {
+    text-align: center;
+    padding: 135px 0;
+    width: 580px;
+    height: 349px;
+    background-size: contain;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.room__item:nth-child(even) {
+    margin-right: 0;
+}
+
+.room__item:nth-last-child(-n+2) {
+    margin-bottom: 0;
+}
+
+.room__link {
+    display: inline-block;
+    vertical-align: baseline;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 80px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+  
+.room__item_decor-vibes {
+    background-image: url(images/room_vibes.jpg); 
+    
+}
+  
+.room__item_decor-wars { 
+    background-image: url(images/room_starwars.jpg);
+}
+  
+.room__item_decor-west {
+    background-image: url(images/room_west.jpg);
+}
+  
+.room__item_decor-neon {
+    background-image: url(images/room_neon.jpg);
+}

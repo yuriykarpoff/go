@@ -1,0 +1,27 @@
+/* Блок ответов на вопросы */
+  
+.faq__item {
+    font-weight: 700;
+    font-size: 24px;
+    padding: 30px 70px;
+    margin-bottom: 20px;
+    background-size: 45px 45px;
+    background-position: top 50% right 70px;
+    background-repeat: no-repeat; 
+}
+  
+.faq__item:nth-child(odd) {
+    background-color: #fff;
+    color: #1C1A1A;
+    background-image: url(images/open-purple.svg);
+}
+  
+.faq__item:nth-child(even) {
+    background-color: #440F51;
+    color: #fff;
+    background-image: url(images/open.svg);
+}
+  
+.faq__item:last-child {
+    margin-bottom: 0;
+}
