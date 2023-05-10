@@ -1,24 +1,16 @@
 /* Блок с комнатами */  
 .room__list {
-    display: flow-root;
+    font-size: 0;
+    margin: -10px;
 }
 
 .room__item {
+    display: inline-block;
     text-align: center;
     padding: 135px 0;
     width: 580px;
-    height: 349px;
-    background-size: contain;
-    float: left;
-    margin: 0 20px 20px 0;
-}
-
-.room__item:nth-child(even) {
-    margin-right: 0;
-}
-
-.room__item:nth-last-child(-n+2) {
-    margin-bottom: 0;
+    background-size: cover;
+    margin: 10px;
 }
 
 .room__link {
