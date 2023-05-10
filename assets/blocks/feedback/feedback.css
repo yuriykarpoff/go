@@ -1,13 +1,13 @@
-.feedback {
+.feedback__list {
     padding: 0 100px;
 }
 
-.feedback__block {
+.feedback__item {
     display: flow-root;
     margin: 0 0 50px;
 }
 
-.feedback__block:last-child {
+.feedback__item:last-child {
     margin: 0;
 }
 

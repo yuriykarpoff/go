@@ -18,7 +18,7 @@ body {
   font-size: 20px;
   line-height: 28px;
   font-weight: 400;
-  padding: 146px 0 50px 0;
+  padding: 146px 0 100px;
 }
 
 
@@ -81,10 +81,6 @@ iframe {
 
 .content:first-child {
   padding-top: 0;
-}
-
-.content:last-child {
-  padding-bottom: 100px;
 }
 
 .faq {
