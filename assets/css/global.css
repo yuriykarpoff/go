@@ -18,7 +18,6 @@ body {
   font-size: 20px;
   line-height: 28px;
   font-weight: 400;
-  padding: 146px 0 100px;
 }
 
 
@@ -62,6 +61,10 @@ iframe {
 .visually-hidden {
   position: fixed;
   transform: scale(0);
+}
+
+.main {
+  padding: 146px 0 0
 }
 
 .container {
