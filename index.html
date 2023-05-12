@@ -15,12 +15,42 @@
 </head>
 
 <body>
-    <main class="main">
+    <header class="header">
+         <div class="container header__inner">
+            <img class="logo" src="assets/blocks/header/images/logo.svg"  height="66" alt="Логотип компьютерного клуба GO">
 
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link">Залы</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Бронь</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Отзывы</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <button class="header__callback" type="button">Заказать звонок</button>
+        </div>
+
+    </header>
+
+    <main class="main">
         <section class="content">
             <div class="container poster">
                     <h1 class="poster__title">Game Over</h1>
                     <p class="poster__subtitle">Новый формат игр и отдыха</p>
+
+                    <div class="poster__info-wrapper">
+                        <div class="poster__info">
+                        <p class="poster-info-title">4</p>
+                        <p class="poster-info-text">Тематических зала</p></div>
+                        <div class="poster__info">
+                        <p class="poster-info-title poster-info-title_text">new</p>
+                        <p class="poster-info-text">Новейшая аппаратура</p>
+                        </div>
+                    </div>
+
+                    <button class="poster__button" type="button"><a href="#booking-id">Забронировать</a></button>
             </div>
         </section>
 

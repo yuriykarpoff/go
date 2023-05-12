@@ -1,0 +1,33 @@
+.header {
+    padding: 30px 0 50px;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: row;
+    gap:40px
+}
+
+.nav__link {
+    font-size: 22px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.header__callback {
+    padding: 12px 32px;
+    border: 3px solid #CD06FF;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 22px;
+    line-height: 30px;
+    color: #fff;
+    max-height: 55px;
+    text-transform: uppercase;
+}
