@@ -1,6 +1,18 @@
 .footer {
-    padding: 0 0 100px;
+    padding: 0 0 10px;
+    background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
 }
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 156px;
+}
+
+.footer__wrapper-img {
+    max-height: 274px;
+}
+
 
 /* Стилизуем блок контактов */
 .contact {
@@ -51,6 +63,9 @@
 }
   
 /* Блок соц сетей */
+/* .social {
+    margin: 0 0 156px;
+} */
   
 .social__list {
     font-size: 0;
@@ -92,6 +107,26 @@
 .social__link:active {
     color: #840AA3
 }
-  
+
+/* Блок копирайта */
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.copyright__info {
+    text-align: right;
+}
+
+.copyright__info-designer {
+    padding: 0 0 6px;
+}
+
+.copyright__link:hover {
+    text-decoration: underline;
+}
   
   
