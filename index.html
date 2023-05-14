@@ -21,15 +21,15 @@
 
             <nav class="nav">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#" class="nav__link">Залы</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Бронь</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Отзывы</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+                    <li class="nav__item"><a href="#room-id" class="nav__link">Залы</a></li>
+                    <li class="nav__item"><a href="#about-id" class="nav__link">О нас</a></li>
+                    <li class="nav__item"><a href="#booking-id" class="nav__link">Бронь</a></li>
+                    <li class="nav__item"><a href="#feedback-id" class="nav__link">Отзывы</a></li>
+                    <li class="nav__item"><a href="#contact-id" class="nav__link">Контакты</a></li>
                 </ul>
             </nav>
 
-            <button class="header__callback" type="button">Заказать звонок</button>
+            <button class="header__callback" type="button"><a href="#">Заказать звонок</a></button>
         </div>
 
     </header>
@@ -50,7 +50,11 @@
                         </div>
                     </div>
 
-                    <button class="poster__button" type="button"><a href="#booking-id">Забронировать</a></button>
+                    <a class="poster__button" href="#booking-id">Забронировать</a>
+
+                    <a class="poster__down" href="#contact-id">
+                        <img class="poster__down-img" src="assets/blocks/poster/images/down.svg" alt="Пролистать вниз">
+                    </a>
             </div>
         </section>
 
@@ -80,65 +84,95 @@
             </div>
         </section>
 
-        <section class="content" id="booking-id">
+        <section class="content">
             <div class="booking">
                 <div class="container">
-                    <h2 class="headline">Забронировать зал просто</h2>
+                    <h2 class="headline" id="booking-id">Забронировать зал просто</h2>
                     <form class="add-booking" action="https://jsonplaceholder.typicode.com/posts" method="POST" name="bookRoom">
-                        <!-- <fieldset class="add-booking__fieldset">
+                        <fieldset class="add-booking__fieldset">
                             <legend class="add-booking__title">Выбери зал</legend>
-                            <label for="vibes">80's vibes</label>
-                             <input type="radio" name="room" id="vibes" value="vibes">
-                            <label for="starWars">Star wars</label>
-                            <input type="radio" name="room" id="starWars" value="starWars">
-                            <label for="wildWest">Wild west</label>
-                            <input type="radio" name="room" id="wildWest" value="wildWest">
-                            <label for="neonStyle">Neon style</label>
-                            <input type="radio" name="room" id="neonStyle" value="neonStyle">
-                        </fieldset> -->
+                            <label class="add-booking__checkbox-room" for="vibes">80's vibes</label>
+                            <input class="visually-hidden" type="radio" name="room" id="vibes" value="vibes">
+                            <label class="add-booking__checkbox-room" for="starWars">Star wars</label>
+                            <input class="visually-hidden" type="radio" name="room" id="starWars" value="starWars">
+                            <label class="add-booking__checkbox-room" for="wildWest">Wild west</label>
+                            <input class="visually-hidden" type="radio" name="room" id="wildWest" value="wildWest">
+                            <label class="add-booking__checkbox-room" for="neonStyle">Neon style</label>
+                            <input class="visually-hidden" type="radio" name="room" id="neonStyle" value="neonStyle">
+                        </fieldset>
 
+                        <div class="add-booking__container">
                         <fieldset class="add-booking__fieldset">
                             <legend class="add-booking__title">Собери набор развлечений</legend>
                             <fieldset class="add-booking__set">
-                                <legend>Приставка:</legend>
+                                <legend class="add-booking__title add-booking__title_small-margin">Приставка:</legend>
                                 <label class="add-booking__label"><input class="add-booking__input" type="radio" name="console" value="playStation">PlayStation</label>
                                 <label class="add-booking__label"><input class="add-booking__input" type="radio" name="console" value="segaMegaDrive">Sega Mega Drive</label>
                                 <label class="add-booking__label"><input class="add-booking__input" type="radio" name="console" value="xBoxOneS">X-box One S</label>
                                 <label class="add-booking__label"><input class="add-booking__input" type="radio" name="console" value="dendy">Dendy</label>
                             </fieldset>
                             <fieldset class="add-booking__set">
-                                <legend>Настольные игры:</legend>
+                                <legend class="add-booking__title add-booking__title_small-margin">Настольные игры:</legend>
                                 <label class="add-booking__label"><input class="add-booking__input" type="checkbox" name="table_games" value="jenga">Jenga</label>
                                 <label class="add-booking__label"><input class="add-booking__input" type="checkbox" name="table_games" value="monopoly">Monopoly</label>
                                 <label class="add-booking__label"><input class="add-booking__input" type="checkbox" name="table_games" value="munchkin">Манчкин</label>
                                 <label class="add-booking__label"><input class="add-booking__input" type="checkbox" name="table_games" value="alias">Alias</label>
                             </fieldset>
                             <fieldset class="add-booking__set">
-                                <legend>Дополнительно:</legend>
+                                <legend class="add-booking__title add-booking__title_small-margin">Дополнительно:</legend>
                                 <label class="add-booking__label"><input class="add-booking__input" type="checkbox" name="extra" value="karaoke">Караоке</label>
                                 <label class="add-booking__label"><input class="add-booking__input" type="checkbox" name="extra" value="vr">VR</label>
                             </fieldset>
                         </fieldset>
-                            <!-- <fieldset class="add-booking__fieldset">
+
+                        <fieldset class="add-booking__fieldset">
                                 <legend class="add-booking__title">Выбери дату и время</legend>
-                                <input type="date" name="date" id="date" placeholder="Дата" required>
-                                <input type="time" name="time" id="time" required>
-                                <input type="number" name="person" id="person" placeholder="Количество персон" required>
-                                <label for="name">Имя</label>
-                                <input type="text" name="name" id="name" required>
-                                <label for="surname">Фамилия</label>
-                                <input type="text" name="surname" id="surname" required>
-                                <label for="phone">Телефон</label>
-                                <input type="tel" name="phone" id="phone"
-                                title="Введите номер в числовом формате (без плюсов, тире и скобок)" required
-                                pattern="^[ 0-9]+$">
-                                <label for="email">E-mail</label>
-                                <input type="email" name="email" id="email"
-                                title="Введите e-mail в формате example@example.com" required
-                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
-                            </fieldset> -->
+
+                                <div class="add-booking__select">
+                                <select class="add-booking__input-select__small-width" name="date" id="date" required>
+                                    <option value="">Дата</option>
+                                    <option>16.05</option>
+                                    <option>17.05</option>
+                                    <option>18.05</option>
+                                </select>
+
+                                <select class="add-booking__input-select__small-width" name="time" id="time" required>
+                                    <option value="">Время</option>
+                                    <option>16:00</option>
+                                    <option>18:00</option>
+                                    <option>20:00</option>
+                                </select>
+
+                                <select class="add-booking__input-select__large-width" name="person" id="person" required>
+                                    <option value="">Сколько человек</option>
+                                    <option>1-3</option>
+                                    <option>4-6</option>
+                                    <option>7-9</option>
+                                    <option>10 и более</option>
+                                </select>
+                                </div>
+
+                                <div class="add-booking__name">
+                                    <label class="add-booking__label-text" for="name">Имя</label>
+                                    <input class="add-booking__input-text" type="text" name="name" id="name" required>
+                                    <label class="add-booking__label-text" for="surname">Фамилия</label>
+                                    <input class="add-booking__input-text" type="text" name="surname" id="surname" required>
+                                </div>
+
+                                <div class="add-booking__contact">
+                                    <label class="add-booking__label-text" for="phone">Телефон</label>
+                                    <input class="add-booking__input-text" type="tel" name="phone" id="phone"
+                                    title="Введите номер в числовом формате (без плюсов, тире и скобок)" required
+                                    pattern="^[ 0-9]+$">
+                                    <label class="add-booking__label-text" for="email">E-mail</label>
+                                    <input class="add-booking__input-text" type="email" name="email" id="email"
+                                    title="Введите e-mail в формате example@example.com" required
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                                </div>
+                        </fieldset>
                         
-                        <button type="submit">Забронировать</button>
+                        <button class="add-booking__button" type="submit">Забронировать</button>
+                        </div>
                     </form>
              </div>
             </div>

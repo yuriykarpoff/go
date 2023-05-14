@@ -1,5 +1,4 @@
 /* Форма бронирования комнат */
-
 fieldset,
 legend,
 label,
@@ -10,14 +9,26 @@ input {
 
 .booking {
     background-color: #440F51;
-    padding: 80px 0 0;
+    padding: 80px 0;
 }
 
 .add-booking__fieldset {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     border: none;
+    margin: 0 0 60px;
+}
+
+.add-booking__fieldset:last-child {
+    margin: 0 0 40px;
+}
+
+.add-booking__container {
+    width: 1040px;
+    padding: 0 30px;
+    margin: 0 auto;
+    display: flow-root;
 }
 
 .add-booking__title {
@@ -25,6 +36,28 @@ input {
     line-height: 28px;
     text-align: center;
     font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.add-booking__title_small-margin {
+    margin-bottom: 24px;
+}
+
+.add-booking__checkbox-room {
+    padding: 7px 15px;
+    background-color: #fff;
+    color: #000;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 250px;
+    text-align: center;
+}
+
+.add-booking__checkbox-room:hover {
+    background-color: gray;
 }
 
 .add-booking__set {
@@ -39,10 +72,56 @@ input {
     padding: 10px 0;
 }
 
-.add-booking__input {
-    margin-right: 12px;
-    width: 200px;
-    height: 200px;
+.add-booking__input { 
+    width: 25px;
+    height: 25px;
+    margin: 0 12px 0 0;
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+
+.add-booking__input-text {
+    font-size: 18px;
+    line-height: 28px;
+    padding: 12px 20px;
+    width: 300px;
+    display: block;
+    max-height: 52px;
+}
+
+.add-booking__select {
+    padding-top: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 36px 32px;
+    max-width: 300px;
+}
+
+.add-booking__input-select__small-width {
+    width: 134px;
+}
+
+.add-booking__input-select__large-width {
+    width: 300px;
+}
+
+.add-booking__label-text {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+}
+
+.add-booking__button {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    text-transform: uppercase;
+    padding: 16px 50px;
+    color: #6C0287;
+    border: none;
+    border-radius: 10px;
+    float: right;
 }
 
 
