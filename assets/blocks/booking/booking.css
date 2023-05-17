@@ -107,10 +107,6 @@ input {
     max-width: 280px;
 }
 
-.add-booking__input-text_width-large {
-    width: 300px;
-}
-
 .add-booking__date-block {
     padding: 22px 0 0;
 }
