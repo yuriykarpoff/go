@@ -29,7 +29,7 @@
                 </ul>
             </nav>
 
-            <button class="header__callback" type="button"><a href="#">Заказать звонок</a></button>
+            <a class="header__callback" href="#">Заказать звонок</a>
         </div>
 
     </header>
@@ -40,20 +40,24 @@
                     <h1 class="poster__title">Game Over</h1>
                     <p class="poster__subtitle">Новый формат игр и отдыха</p>
 
-                    <div class="poster__info-wrapper">
-                        <div class="poster__info">
-                        <p class="poster-info-title">4</p>
-                        <p class="poster-info-text">Тематических зала</p></div>
-                        <div class="poster__info">
-                        <p class="poster-info-title poster-info-title_text">new</p>
-                        <p class="poster-info-text">Новейшая аппаратура</p>
+                    <div class="poster__info">
+                        <div class="poster__info-element">
+                        <p class="poster__info-features poster__info-features_field-number">4</p>
+                        <p class="poster__info-desc">Тематических зала</p></div>
+                        <div class="poster__info-element">
+                        <p class="poster__info-features poster__info-features_field-text">New</p>
+                        <p class="poster__info-desc">Новейшая аппаратура</p>
                         </div>
                     </div>
 
                     <a class="poster__button" href="#booking-id">Забронировать</a>
 
-                    <a class="poster__down" href="#contact-id">
-                        <img class="poster__down-img" src="assets/blocks/poster/images/down.svg" alt="Пролистать вниз">
+                    <a class="poster__down" href="#service-id">
+                        <svg width="97" height="97" viewBox="0 0 97 97" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="48.5" cy="48.5" r="48" stroke="white"/>
+                            <rect x="34.4255" y="43.9162" width="1.82001" height="20.0201" transform="rotate(-44.9975 34.4255 43.9162)" fill="white"/>
+                            <rect x="48.5807" y="58.0737" width="1.82001" height="20.0201" transform="rotate(-134.997 48.5807 58.0737)" fill="white"/>
+                        </svg>
                     </a>
             </div>
         </section>
@@ -73,7 +77,7 @@
         </section>
 
         <section  class="content" id="room-id">
-            <div class="container">
+            <div class="container room">
                 <h2 class="headline">Наши залы</h2>
                 <ul class="room__list">
                     <li class="room__item room__item_decor-vibes"><a class="room__link" href="vibes.html">80's vibes</a></li>
@@ -128,22 +132,12 @@
                         <fieldset class="add-booking__fieldset">
                                 <legend class="add-booking__title">Выбери дату и время</legend>
 
-                                <div class="add-booking__select">
-                                <select class="add-booking__input-select__small-width" name="date" id="date" required>
-                                    <option value="">Дата</option>
-                                    <option>16.05</option>
-                                    <option>17.05</option>
-                                    <option>18.05</option>
-                                </select>
-
-                                <select class="add-booking__input-select__small-width" name="time" id="time" required>
-                                    <option value="">Время</option>
-                                    <option>16:00</option>
-                                    <option>18:00</option>
-                                    <option>20:00</option>
-                                </select>
-
-                                <select class="add-booking__input-select__large-width" name="person" id="person" required>
+                                <div class="add-booking__date-block">
+                                    
+                                <input class="add-booking__input-text add-booking__input-text_width-small" type="date" name="date" id="date" required>   
+                                <input class="add-booking__input-text add-booking__input-text_width-small" type="time" name="time" id="time" required>
+    
+                                <select class="add-booking__input-text add-booking__input-text_width-large add-booking__select" name="person" id="person" required>
                                     <option value="">Сколько человек</option>
                                     <option>1-3</option>
                                     <option>4-6</option>
@@ -152,20 +146,21 @@
                                 </select>
                                 </div>
 
-                                <div class="add-booking__name">
+                                <div class="add-booking__name-block">
                                     <label class="add-booking__label-text" for="name">Имя</label>
-                                    <input class="add-booking__input-text" type="text" name="name" id="name" required>
+                                    <input class="add-booking__input-text add-booking__input-text_width-medium" type="text" name="name" id="name" required>
                                     <label class="add-booking__label-text" for="surname">Фамилия</label>
-                                    <input class="add-booking__input-text" type="text" name="surname" id="surname" required>
+                                    <input class="add-booking__input-text add-booking__input-text_width-medium" type="text" name="surname" id="surname" required>
                                 </div>
+ 
 
-                                <div class="add-booking__contact">
+                                <div class="add-booking__contact-block">
                                     <label class="add-booking__label-text" for="phone">Телефон</label>
-                                    <input class="add-booking__input-text" type="tel" name="phone" id="phone"
+                                    <input class="add-booking__input-text add-booking__input-text_width-large" type="tel" name="phone" id="phone"
                                     title="Введите номер в числовом формате (без плюсов, тире и скобок)" required
                                     pattern="^[ 0-9]+$">
                                     <label class="add-booking__label-text" for="email">E-mail</label>
-                                    <input class="add-booking__input-text" type="email" name="email" id="email"
+                                    <input class="add-booking__input-text add-booking__input-text_width-large" type="email" name="email" id="email"
                                     title="Введите e-mail в формате example@example.com" required
                                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                                 </div>
@@ -203,28 +198,28 @@
         </section>
 
         <section class="content" id="feedback-id">
-            <div class="container">
+            <div class="container feedback">
                 <h2 class="headline">Отзывы посетителей</h2>
 
                 <ul class="feedback__list">
                     <li class="feedback__item">
                         <figure class="feedback__figure">
                             <img class="feedback__image" src="assets/blocks/feedback/images/user01.jpg" alt="Посетитель Макс Самойлов" height="280">
-                            <figcaption class="feedback_name">Макс Самойлов</figcaption>
+                            <figcaption class="feedback__name">Макс Самойлов</figcaption>
                         </figure>
                         <p class="feedback__text">Отмечали здесь день роджения с компанией друзей, все было очень круто. VR очки это просто бомба, никогда еще я не был в таком полном игровом погружении. Сервис на высоте!</p>
                     </li>
                     <li class="feedback__item">
                         <figure class="feedback__figure">
                             <img class="feedback__image" src="assets/blocks/feedback/images/user02.jpg" alt="Посетитель Оксана Григорьева" height="280">
-                            <figcaption>Оксана Григорьева</figcaption>
+                            <figcaption class="feedback__name">Оксана Григорьева</figcaption>
                         </figure>
                         <p class="feedback__text">Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе больше нет подобных заведений</p>
                     </li>
                     <li class="feedback__item">
                         <figure class="feedback__figure">
                             <img class="feedback__image" src="assets/blocks/feedback/images/user03.jpg" alt="Посетитель Никита Ященко" height="280">
-                            <figcaption>Никита Ященко</figcaption>
+                            <figcaption class="feedback__name">Никита Ященко</figcaption>
                         </figure>
                         <p class="feedback__text">Немного подвисала игры в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных войн, попал в атмосферу космоса</p>
                     </li>
@@ -233,7 +228,7 @@
         </section>
 
         <section class="content" id="faq-id">
-            <div class="container">
+            <div class="container faq">
                 <h2 class="headline">Частые вопросы</h2>
                 <ul class="faq__list">
                     <li class="faq__item">Можно ли забронировать комнату онлайн?</li>

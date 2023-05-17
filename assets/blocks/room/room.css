@@ -1,28 +1,26 @@
 /* Блок с комнатами */  
 .room__list {
-    font-size: 0;
-    margin: -10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 20px;
 }
 
 .room__item {
-    display: inline-block;
+    flex: 0 1 580px;
+    padding: 135px 164px;
     text-align: center;
-    padding: 135px 0;
-    width: 580px;
     background-size: cover;
-    margin: 10px;
+    background-repeat: no-repeat;
 }
 
 .room__link {
-    display: inline-block;
-    vertical-align: baseline;
     font-size: 70px;
     font-weight: 700;
     line-height: 80px;
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
-    max-width: 250px;
+    z-index: 1;
 }
   
 .room__item_decor-vibes {

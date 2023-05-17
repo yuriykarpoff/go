@@ -14,8 +14,8 @@ input {
 
 .add-booking__fieldset {
     display: flex;
-    flex-flow: row wrap;
     justify-content: space-between;
+    align-items: flex-start;
     border: none;
     margin: 0 0 60px;
 }
@@ -37,6 +37,7 @@ input {
     text-align: center;
     font-weight: 700;
     margin-bottom: 40px;
+    width: 100%;
 }
 
 .add-booking__title_small-margin {
@@ -54,15 +55,22 @@ input {
     cursor: pointer;
     width: 250px;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .add-booking__checkbox-room:hover {
     background-color: gray;
 }
 
+.add-booking__checkbox-room:active {
+    border: 1px solid #6C0287;
+    background-color: #404447;
+}
+
 .add-booking__set {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     border: none;
 }
 
@@ -80,36 +88,47 @@ input {
     vertical-align: text-top;
 }
 
-
 .add-booking__input-text {
     font-size: 18px;
-    line-height: 28px;
-    padding: 12px 20px;
-    width: 300px;
-    display: block;
-    max-height: 52px;
+    padding: 16px 20px;
+    margin: 0 0 14px;
 }
 
-.add-booking__select {
-    padding-top: 28px;
+.add-booking__input-text:last-child {
+    margin: 0;
+}
+
+.add-booking__input-text_width-small {
+    max-width: 134px;
+    margin: 0;
+}
+
+.add-booking__input-text_width-medium {
+    max-width: 280px;
+}
+
+.add-booking__input-text_width-large {
+    width: 300px;
+}
+
+.add-booking__date-block {
+    padding: 22px 0 0;
+}
+
+.add-booking__date-block {
     display: flex;
     flex-wrap: wrap;
-    gap: 36px 32px;
+    justify-content: space-between;
+    row-gap: 32px;
     max-width: 300px;
-}
-
-.add-booking__input-select__small-width {
-    width: 134px;
-}
-
-.add-booking__input-select__large-width {
-    width: 300px;
 }
 
 .add-booking__label-text {
     font-size: 14px;
     line-height: 16px;
     font-weight: 700;
+    display: block;
+    margin: 0 0 6px;
 }
 
 .add-booking__button {
@@ -122,6 +141,16 @@ input {
     border: none;
     border-radius: 10px;
     float: right;
+}
+
+.add-booking__select { 
+    width: 300px;  
+    appearance: none;
+    overflow: hidden;
+    background-image: url('images/arrow.svg');
+    background-repeat: no-repeat;
+    background-position: top 18px right 27px;
+    background-color: #fff;
 }
 
 
