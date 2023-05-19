@@ -1,0 +1,43 @@
+.service__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 20px;
+}
+
+.service__item {
+    flex: 0 1 380px;
+    padding: 166px 40px 6px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.service__name {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 700;
+}
+
+.service__item_decor-vr {
+    background-image: url(images/vr.jpg); 
+    
+}
+  
+.service__item_decor-audio { 
+    background-image: url(images/audio.jpg);
+}
+  
+.service__item_decor-karaoke {
+    background-image: url(images/karaoke.jpg);
+}
+  
+.service__item_decor-games {
+    background-image: url(images/games.jpg);
+}
+
+.service__item_decor-cinema {
+    background-image: url(images/cinema.jpg);
+}
+
+.service__item_decor-ps {
+    background-image: url(images/ps.jpg);
+}

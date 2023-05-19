@@ -1,0 +1,161 @@
+/* Форма бронирования комнат */
+fieldset,
+legend,
+label,
+input {
+    margin: 0;
+    padding: 0;
+}
+
+.booking {
+    background-color: #440F51;
+    padding: 80px 0;
+}
+
+.add-booking__fieldset {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: none;
+    margin: 0 0 60px;
+}
+
+.add-booking__fieldset:last-child {
+    margin: 0 0 40px;
+}
+
+.add-booking__container {
+    width: 1040px;
+    padding: 0 30px;
+    margin: 0 auto;
+    display: flow-root;
+}
+
+.add-booking__title {
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.add-booking__title_small-margin {
+    margin-bottom: 24px;
+}
+
+.add-booking__checkbox-room {
+    padding: 7px 15px;
+    background-color: #fff;
+    color: #000;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 250px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.add-booking__checkbox-room:hover {
+    background-color: gray;
+}
+
+.add-booking__checkbox-room:active {
+    background-color: #404447;
+    border: none;
+}
+
+.add-booking__set {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: none;
+}
+
+.add-booking__label {
+    font-size: 22px;
+    line-height: 25px;
+    padding: 10px 0;
+}
+
+.add-booking__input { 
+    width: 25px;
+    height: 25px;
+    margin: 0 12px 0 0;
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+.add-booking__input-text {
+    font-size: 18px;
+    padding: 16px 20px;
+    margin: 0 0 14px;
+}
+
+.add-booking__input-text::-webkit-datetime-edit {
+    display: none;
+}
+
+.add-booking__input-text:last-child {
+    margin: 0;
+}
+
+.add-booking__input-text_width_small {
+    max-width: 134px;
+    width: 100%;
+    margin: 0;
+}
+
+.add-booking__input-text_width_medium {
+    min-width: 280px;
+}
+
+.add-booking__input-text_width_large {
+    min-width: 300px;
+}
+
+.add-booking__date-block {
+    padding: 22px 0 0;
+}
+
+.add-booking__date-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 32px;
+    max-width: 300px;
+}
+
+.add-booking__label-text {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 700;
+    display: block;
+    margin: 0 0 6px;
+}
+
+.add-booking__button {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    text-transform: uppercase;
+    padding: 16px 50px;
+    color: #6C0287;
+    border: none;
+    border-radius: 10px;
+    float: right;
+}
+
+.add-booking__select { 
+    width: 300px;  
+    appearance: none;
+    overflow: hidden;
+    background-image: url('images/arrow.svg');
+    background-repeat: no-repeat;
+    background-position: top 18px right 27px;
+    background-color: #fff;
+}
+
+
