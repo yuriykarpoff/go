@@ -63,8 +63,8 @@ input {
 }
 
 .add-booking__checkbox-room:active {
-    border: 1px solid #6C0287;
     background-color: #404447;
+    border: none;
 }
 
 .add-booking__set {
@@ -94,17 +94,26 @@ input {
     margin: 0 0 14px;
 }
 
+.add-booking__input-text::-webkit-datetime-edit {
+    display: none;
+}
+
 .add-booking__input-text:last-child {
     margin: 0;
 }
 
-.add-booking__input-text_width-small {
+.add-booking__input-text_width_small {
     max-width: 134px;
+    width: 100%;
     margin: 0;
 }
 
-.add-booking__input-text_width-medium {
-    max-width: 280px;
+.add-booking__input-text_width_medium {
+    min-width: 280px;
+}
+
+.add-booking__input-text_width_large {
+    min-width: 300px;
 }
 
 .add-booking__date-block {
