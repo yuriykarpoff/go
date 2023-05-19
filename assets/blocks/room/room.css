@@ -22,7 +22,12 @@
     text-decoration: none;
     z-index: 1;
 }
-  
+
+.room__link:hover {
+    color: #ccc;
+    border-bottom: 3px solid #ccc;
+}
+
 .room__item_decor-vibes {
     background-image: url(images/room_vibes.jpg); 
     

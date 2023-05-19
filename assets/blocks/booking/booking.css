@@ -56,15 +56,18 @@ input {
     width: 250px;
     text-align: center;
     text-transform: uppercase;
+    border: 3px solid transparent;
 }
 
 .add-booking__checkbox-room:hover {
-    background-color: gray;
+    background-color: #EADEED;
+    border: 3px solid #640AA3;
 }
 
 .add-booking__checkbox-room:active {
-    background-color: #404447;
-    border: none;
+    background-color: #6C0287;
+    border: 3px solid #fff;
+    color: #fff;
 }
 
 .add-booking__set {
@@ -88,14 +91,26 @@ input {
     vertical-align: text-top;
 }
 
+.add-booking__input:focus {
+    outline: 1px solid #CD06FF;
+}
+
 .add-booking__input-text {
     font-size: 18px;
     padding: 16px 20px;
     margin: 0 0 14px;
+    position: relative;
 }
 
-.add-booking__input-text::-webkit-datetime-edit {
-    display: none;
+.add-booking__input-text:focus {
+    outline: 2px solid #CD06FF
+}
+
+.add-booking__input-text::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    position: absolute;
+    right: 20px;
+    top: 16px;
 }
 
 .add-booking__input-text:last-child {
@@ -146,7 +161,23 @@ input {
     border: none;
     border-radius: 10px;
     float: right;
+    border: 3px solid transparent;
 }
+
+.add-booking__button:hover {
+    background-color: #EADEED;
+    border: 3px solid #6C0287;
+}
+
+.add-booking__button:active {
+    background-color: #EADEED;
+    border: 3px solid transparent;
+}
+
+.add-booking__button:focus {
+    outline: 3px solid #6C0287;
+}
+
 
 .add-booking__select { 
     width: 300px;  

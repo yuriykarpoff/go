@@ -61,11 +61,10 @@
     text-decoration: none;
     color: #fff;
 }
-  
-/* Блок соц сетей */
-/* .social {
-    margin: 0 0 156px;
-} */
+
+.contact__link:hover {
+    color: #CD06FF;
+}
   
 .social__list {
     font-size: 0;
@@ -97,7 +96,7 @@
 }
   
 .social__link:hover {
-    color: #CD06FF;
+    color: #EADEED;
 }
   
 .social__link:focus {
@@ -105,9 +104,9 @@
 }
   
 .social__link:active {
-    color: #840AA3
+    color: #CD06FF;
+    outline: none;
 }
-
 /* Блок копирайта */
 
 .copyright {
