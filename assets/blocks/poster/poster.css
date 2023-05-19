@@ -96,6 +96,16 @@
   z-index: -1;
 }
 
+.poster__button:hover,
+.poster__button:focus {
+  background-color: #840AA3;
+  outline: none;
+}
+
+.poster__button:active {
+  background-color: #640AA3;
+  
+}
 
 .poster__down {
   position: absolute;
@@ -105,5 +115,29 @@
   transform: translateX(-50%);
   width: 97px;
   height: 97px;
+  z-index: 2;
+}
+
+
+.poster__down:hover circle {
+  fill: #fff;
+  stroke: none;
+}
+
+.poster__down:hover rect {
+  fill: #6C0287;
+}
+
+.poster__down:focus {
+  outline: 1px solid #CD06FF;
+}
+
+.poster__down:active circle {
+  fill: #CD06FF;
+  stroke: none;
+}
+
+.poster__down:active rect {
+  fill: #fff;
 }
 
