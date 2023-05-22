@@ -57,6 +57,7 @@ input {
     text-align: center;
     text-transform: uppercase;
     border: 3px solid transparent;
+    display: block;
 }
 
 .add-booking__checkbox-room:hover {
@@ -64,10 +65,16 @@ input {
     border: 3px solid #640AA3;
 }
 
-.add-booking__checkbox-room:active {
+.add-booking__label-room input[type="radio"]:focus + .add-booking__checkbox-room {
+    background-color: #fff;
+    border: 3px solid #640AA3;
+    color: #000;
+} 
+
+.add-booking__label-room input[type="radio"]:checked + .add-booking__checkbox-room {
     background-color: #6C0287;
-    border: 3px solid #fff;
-    color: #fff;
+    border: 3px solid #FFFFFF;
+    color: #FFFFFF;
 }
 
 .add-booking__set {

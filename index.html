@@ -96,14 +96,23 @@
                     <form class="add-booking" action="https://jsonplaceholder.typicode.com/posts" method="POST" name="bookRoom">
                         <fieldset class="add-booking__fieldset">
                             <legend class="add-booking__title">Выбери зал</legend>
+                            
+                            <label class="add-booking__label-room" for="vibes">
                             <input class="visually-hidden" type="radio" name="room" id="vibes" value="vibes">
-                            <label class="add-booking__checkbox-room" for="vibes">80's vibes</label>
-                            <label class="add-booking__checkbox-room" for="starWars">Star wars</label>
+                            <span class="add-booking__checkbox-room">80's vibes</span>
+                        </label>
+                            <label class="add-booking__label-room" for="starWars">
                             <input class="visually-hidden" type="radio" name="room" id="starWars" value="starWars">
-                            <label class="add-booking__checkbox-room" for="wildWest">Wild west</label>
+                            <span class="add-booking__checkbox-room">Star wars</span>
+                        </label>
+                            <label class="add-booking__label-room" for="wildWest">
                             <input class="visually-hidden" type="radio" name="room" id="wildWest" value="wildWest">
-                            <label class="add-booking__checkbox-room" for="neonStyle">Neon style</label>
+                            <span class="add-booking__checkbox-room">Wild west</span>
+                        </label>
+                            <label class="add-booking__label-room" for="neonStyle">
                             <input class="visually-hidden" type="radio" name="room" id="neonStyle" value="neonStyle">
+                            <span class="add-booking__checkbox-room">Neon style</span>
+                        </label>
                         </fieldset>
 
                         <div class="add-booking__container">
@@ -232,11 +241,11 @@
             <div class="container faq">
                 <h2 class="headline">Частые вопросы</h2>
                 <ul class="faq__list">
-                    <li class="faq__item"><a href="#faq-id" class="faq__link-one">Можно ли забронировать комнату онлайн?</a></li> 
-                    <li class="faq__item"><a href="#faq-id" class="faq__link-two">Могут ли мне вернуть деньги за бронь?</a></li>
-                    <li class="faq__item"><a href="#faq-id" class="faq__link-one">Какая комната самая популярная?</a></li>
-                    <li class="faq__item"><a href="#faq-id" class="faq__link-two">Как получить VIP карту?</a></li>
-                    <li class="faq__item"><a href="#faq-id" class="faq__link-one">Какая комната самая популярная?</a></li>
+                    <li class="faq__item"><a href="#faq-id" class="faq__link faq__link-odd">Можно ли забронировать комнату онлайн?</a></li> 
+                    <li class="faq__item"><a href="#faq-id" class="faq__link faq__link-even">Могут ли мне вернуть деньги за бронь?</a></li>
+                    <li class="faq__item"><a href="#faq-id" class="faq__link faq__link-odd">Какая комната самая популярная?</a></li>
+                    <li class="faq__item"><a href="#faq-id" class="faq__link faq__link-even">Как получить VIP карту?</a></li>
+                    <li class="faq__item"><a href="#faq-id" class="faq__link faq__link-odd">Какая комната самая популярная?</a></li>
                 </ul>
             </div>
         </section>

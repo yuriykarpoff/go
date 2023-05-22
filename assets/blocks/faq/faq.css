@@ -15,13 +15,18 @@
 
 .faq__item:nth-child(even) {
     background-color: #440F51;
+    color: #fff;
 }
   
 .faq__item:last-child {
     margin-bottom: 0;
 }
 
-.faq__link-one:after {
+.faq__link {
+    display: block;
+}
+
+.faq__link-odd:after {
     content: '';
     background-image: url(images/open-purple.svg);
     width: 46px;
@@ -31,17 +36,17 @@
     right: 70px;
 }
 
-.faq__link-one:hover:after {
+.faq__link-odd:hover:after {
     content: '';
     background-image: url(images/open-purple-hover.svg);
 }
 
-.faq__link-one:active:after {
+.faq__link-odd:active:after {
     content: '';
     background-image: url(images/open-purple-active.svg);
 }
 
-.faq__link-two:after {
+.faq__link-even:after {
     content: '';
     background-image: url(images/open.svg);
     width: 46px;
@@ -51,12 +56,12 @@
     right: 70px;
 }
 
-.faq__link-two:hover:after {
+.faq__link-even:hover:after {
     content: '';
     background-image: url(images/open-hover.svg);
 }
 
-.faq__link-two:active:after {
+.faq__link-even:active:after {
     content: '';
     background-image: url(images/open-active.svg);
 }

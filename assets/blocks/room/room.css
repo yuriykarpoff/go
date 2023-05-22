@@ -24,8 +24,8 @@
 }
 
 .room__link:hover {
-    color: #ccc;
-    border-bottom: 3px solid #ccc;
+    color: #CD06FF;
+    text-shadow: 1px 1px 1px #000;
 }
 
 .room__item_decor-vibes {
