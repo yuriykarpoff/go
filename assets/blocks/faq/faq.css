@@ -26,6 +26,11 @@
     display: block;
 }
 
+.faq__link:focus {
+    outline: 3px solid #6C0287;
+    transition: outline 0.4s linear;
+}
+
 .faq__link-odd:after {
     content: '';
     background-image: url(images/open-purple.svg);
@@ -39,12 +44,15 @@
 .faq__link-odd:hover:after {
     content: '';
     background-image: url(images/open-purple-hover.svg);
+    transition: background 0.5s linear;
 }
 
 .faq__link-odd:active:after {
     content: '';
     background-image: url(images/open-purple-active.svg);
+    transition: background 0.5s linear;
 }
+
 
 .faq__link-even:after {
     content: '';
@@ -59,9 +67,11 @@
 .faq__link-even:hover:after {
     content: '';
     background-image: url(images/open-hover.svg);
+    transition: background 0.5s linear;
 }
 
 .faq__link-even:active:after {
     content: '';
     background-image: url(images/open-active.svg);
+    transition: background 0.5s linear;
 }

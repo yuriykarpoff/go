@@ -100,11 +100,12 @@
 .poster__button:focus {
   background-color: #840AA3;
   outline: none;
+  transition: background 0.4s linear;
 }
 
 .poster__button:active {
   background-color: #640AA3;
-  
+  transition: background 0.4s linear;
 }
 
 .poster__down {
@@ -122,14 +123,17 @@
 .poster__down:hover circle {
   fill: #fff;
   stroke: none;
+  transition: fill 0.7s ease-in-out;
 }
 
 .poster__down:hover rect {
   fill: #6C0287;
+  transition: fill 0.5s ease-in-out;
 }
 
 .poster__down:focus {
   outline: 1px solid #CD06FF;
+  transition: outline 0.4s linear;
 }
 
 .poster__down:active circle {
