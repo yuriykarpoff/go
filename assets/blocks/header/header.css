@@ -18,41 +18,43 @@
     font-size: 22px;
     line-height: 50px;
     text-transform: uppercase;
+    transition-duration: 0.8s;
 }
 
 .nav__link:hover {
-    border-bottom: 3px solid #CD06FF;
-    color: #CD06FF;
+    border-bottom: 3px solid var(--link-violet);
+    color: var(--link-violet);
     transition: border 0.3s ease-out, color 0.6s ease-out;
 }
 
 .nav__link:focus,
 .nav__link:active {
-    color: #828282;
+    color: var(--focus-nav);
     transition: color 0.6s ease-out;
 }
 
 .header__callback {
     padding: 12px 32px;
-    border: 3px solid #CD06FF;
+    border: 3px solid var(--link-violet);
     border-radius: 10px;
     font-size: 22px;
     line-height: 30px;
-    color: #fff;
+    color: var(--white);
     max-height: 55px;
     text-transform: uppercase;
     background-color: transparent;
+    transition-duration: 1.2s;
 }
 
 .header__callback:hover,
 .header__callback:focus {
-    background-color: #6C0287;
+    background-color: var(--input-violet);
     border: 3px solid transparent;
     outline: none;
     transition: background 0.8s ease-out;
 }
 
 .header__callback:active {
-    background-color: #640AA3;
-    outline: 1px solid #000;
+    background-color: var(--button-violet);
+    outline: 1px solid var(--black);
 }
