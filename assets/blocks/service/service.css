@@ -9,6 +9,15 @@
     padding: 166px 40px 6px;
     background-size: cover;
     background-repeat: no-repeat;
+    max-height: 228px;
+}
+
+.service__item:nth-child(2) {
+    margin-top: 70px;
+}
+
+.service__item:nth-child(2n+4) {
+    margin-top: -70px;
 }
 
 .service__item:hover {

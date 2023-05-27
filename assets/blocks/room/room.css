@@ -17,7 +17,7 @@
     font-size: 70px;
     font-weight: 700;
     line-height: 80px;
-    color: #fff;
+    color: var(--white);
     text-transform: uppercase;
     text-decoration: none;
     z-index: 1;
@@ -27,8 +27,8 @@
 .room__link:hover,
 .room__link:active,
 .room__link:focus {
-    color: #CD06FF;
-    text-shadow: 1px 1px 1px #000;
+    color: var(--link-violet);
+    text-shadow: 1px 1px 1px var(--black);
     transition: color 0.3s ease-in, text-shadow 0.3s ease-in;
 }
 

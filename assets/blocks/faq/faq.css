@@ -9,13 +9,13 @@
 }
 
 .faq__item:nth-child(odd) {
-    background-color: #fff;
-    color: #1C1A1A;
+    background-color: var(--white);
+    color: var(--color-faq-odd);
 }
 
 .faq__item:nth-child(even) {
-    background-color: #440F51;
-    color: #fff;
+    background-color: var(--bg-violet);
+    color: var(--white);
 }
   
 .faq__item:last-child {
@@ -28,7 +28,7 @@
 }
 
 .faq__link:focus {
-    outline: 3px solid #6C0287;
+    outline: 3px solid var(--input-violet);
     outline-offset: 15px;
     border-radius: 10px;
     transition: outline 0.4s linear;
