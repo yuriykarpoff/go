@@ -60,6 +60,7 @@
 .contact__link {
     text-decoration: none;
     color: #fff;
+    transition-duration: 0.8s;
 }
 
 .contact__link:hover {
@@ -128,6 +129,10 @@
 
 .copyright__info-designer {
     padding: 0 0 6px;
+}
+
+.copyright__link {
+    transition-duration: 0.8s;
 }
 
 .copyright__link:hover {

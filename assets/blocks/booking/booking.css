@@ -58,6 +58,7 @@ input {
     text-transform: uppercase;
     border: 3px solid transparent;
     display: block;
+    transition-duration: 0.8s;
 }
 
 .add-booking__checkbox-room:hover {
@@ -100,6 +101,7 @@ input {
     margin: 0 12px 0 0;
     display: inline-block;
     vertical-align: text-top;
+    transition-duration: 0.4s;
 }
 
 .add-booking__input:focus {
@@ -112,6 +114,7 @@ input {
     padding: 16px 20px;
     margin: 0 0 14px;
     position: relative;
+    transition-duration: 0.4s;
 }
 
 .add-booking__input-text:focus {
@@ -175,6 +178,7 @@ input {
     border-radius: 10px;
     float: right;
     border: 3px solid transparent;
+    transition-duration: 0.6s;
 }
 
 .add-booking__button:hover {

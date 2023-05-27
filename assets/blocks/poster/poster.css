@@ -82,6 +82,7 @@
   border: none;
   border-radius: 10px;
   z-index: 2;
+  transition-duration: 0.6s;
 }
 
 .poster__button::before {
@@ -112,11 +113,11 @@
   position: absolute;
   left: 50%;
   bottom: 90px;
-  z-index: 1;
   transform: translateX(-50%);
   width: 97px;
   height: 97px;
   z-index: 2;
+  transition-duration: 1.3s;
 }
 
 
