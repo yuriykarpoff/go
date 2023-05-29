@@ -10,6 +10,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     max-height: 228px;
+    transition-duration: 0.8s;
 }
 
 .service__item:nth-child(2) {

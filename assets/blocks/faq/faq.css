@@ -28,8 +28,8 @@
 }
 
 .faq__link:focus {
-    outline: 3px solid var(--input-violet);
-    outline-offset: 15px;
+    outline: none;
+    text-decoration: underline;
     border-radius: 10px;
     transition: outline 0.4s linear;
 }
