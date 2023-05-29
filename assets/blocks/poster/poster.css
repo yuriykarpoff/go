@@ -99,7 +99,7 @@
 
 .poster__button:hover,
 .poster__button:focus {
-  background-color: var(--button-violet);
+  background-color: var(--button-poster);
   outline: none;
   transition: background 0.4s linear;
 }

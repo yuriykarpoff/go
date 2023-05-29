@@ -59,6 +59,7 @@ input {
     border: 3px solid transparent;
     display: block;
     transition-duration: 0.8s;
+    user-select: none;
 }
 
 .add-booking__checkbox-room:hover {
@@ -93,6 +94,7 @@ input {
     font-size: 22px;
     line-height: 25px;
     padding: 10px 0;
+    cursor: pointer;
 }
 
 .add-booking__input { 
